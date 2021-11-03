@@ -1,5 +1,5 @@
-import MotionQuestionnaireEn from './pages/MotionQuestionnaireEn'
-import MotionQuestionnaireAr from './pages/MotionQuestionnaireAr'
+import MotionQuestionnaireEn from './pages-motion/MotionQuestionnaireEn'
+import MotionQuestionnaireAr from './pages-motion/MotionQuestionnaireAr'
 import { HashRouter as Router, Route } from 'react-router-dom'
 
 function App() {

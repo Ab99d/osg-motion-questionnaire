@@ -1,16 +1,16 @@
 import React from 'react'
-import heroText from '../assets/images/motion png.png'
-import heroImg from '../assets/images/motionqustionneen-text.png'
-import brandNameBg1 from '../assets/images/brandname-bg-1.png'
-import brandNameBg2 from '../assets/images/brandname-bg-2.png'
-import rocketImg from '../assets/images/motion2.png'
-import osgLogo from '../assets/images/logo.png'
-import {Link} from 'react-router-dom'
+import heroText from '../assets/images/m-motion png.png'
+import heroImg from '../assets/images/m-motionqustionneen-text-ar.png'
+import brandNameBg1 from '../assets/images/m-brandname-bg-1-ar.png'
+import brandNameBg2 from '../assets/images/m-brandname-bg-2.png'
+import rocketImg from '../assets/images/m-motion2.png'
+import osgLogo from '../assets/images/m-logo.png'
+import { Link } from 'react-router-dom'
 
-const MotionQuestionnaireEn = () => {
+const MotionQuestionnaireAr = () => {
     return (
         // main parent
-        <div className="main-parent-motion">
+        <div className="main-parent-motion motion-ar">
             {/* navbar */}
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container">
@@ -40,9 +40,9 @@ const MotionQuestionnaireEn = () => {
                                 <a className="nav-link text-center w-100" href>Contact</a>
                             </li>
                         </ul>
-                            <div className="text-center">
-                                <Link className="btn btn-primary" to="/ar">عربي</Link>
-                            </div>
+                        <div className="text-l text-center">
+                            <Link className="btn btn-primary text-center" to="/">English</Link>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -61,19 +61,19 @@ const MotionQuestionnaireEn = () => {
                 </div>
             </div>
             {/* form */}
-            <form className="form mt-5">
+            <form className="form mt-5 motion-form-ar">
                 <div className="container">
-                    <div className="d-flex justify-content-center">
+                    <div className="d-flex justify-content-center flex-row-reverse">
                         <div className="context-bg d-flex position-relative">
                             <img src={brandNameBg1} alt=""/>
                             <div className="brand-name-tagline position-absolute">
-                                <label htmlFor="brandName" className="text-primary font-sm">COMPANY/ORGANIZATION DESCRIPTION: <br /><span id='en-lang' className="text-uppercase" style={{color:'#f8931f'}}>Brand Name (and tagline if there):</span></label>
-                                <input type="text" id="brandName" name="brandName" placeholder="Brand Name:" className="text-left w-100 mt-2" required/>
+                                <label htmlFor="brandName" className="text-primary">وصف الشركة/المنظمة<br /><span id='en-lang' className="text-uppercase fs-6" style={{color:'#f8931f',}}>اسم العلامة التجارية (والشعار إذا كان هناك)</span></label>
+                                <input type="text" id="brandName" name="brandName" placeholder="اسم العلامة التجارية" className="text-left w-100 mt-2" required/>
                                 <div className="tag-line w-100">
-                                    <input type="text" id="Tagline" name="Tagline" placeholder="Tagline:" className="text-left w-100 mt-2" required/>
+                                    <input type="text" id="Tagline" name="Tagline" placeholder="الوصف" className="text-left w-100 mt-2" required/>
                                 </div>
                                 <div className="w-100 mt-3">
-                                    <label htmlFor="" className="fs-6 text-left">PLEASE TELL US ABOUT YOUR BUSINESS:</label>
+                                    <label htmlFor="" className="fs-6">من فضلك أخبرنا عن عملك</label>
                                     <textarea className="text-left out-textarea mt-2 w-100" name="" id="" cols="30" rows="2" required></textarea>
                                 </div>
                             </div>
@@ -87,104 +87,104 @@ const MotionQuestionnaireEn = () => {
                 <div className="questions">
                     <div className="container">
                         <div className="col-lg-10 mx-auto">
-                            <label htmlFor="nameMeaning">COMPANY/ORGANIZATION PRODUCT OR SERVICE DESCRIPTION</label>
+                            <label htmlFor="nameMeaning">منتج الشركة وصف الخدمة</label>
                             <textarea className="text-left" name="" id="" cols="30" rows="2" required></textarea>
                         </div>
 
                         <div className="col-lg-10 mx-auto">
-                            <label htmlFor="organizations-history">VIDEO BRIEF: <br /> PLEASE TELL US YOUR GOAL/OUTCOME FOR THIS VIDEO</label>
+                            <label htmlFor="organizations-history">موجز الفيديو<br /> يرجى إخبارنا بهدفك / نتيجة هذا الفيديو</label>
                             <textarea className="text-left" name="" id="" cols="30" rows="2" required></textarea>
                         </div>
 
                         <div className="col-lg-10 mx-auto">
-                            <label htmlFor="companyProduct/service">WHO’S THE TARGET AUDIENCE OF THIS VIDEO?</label>
+                            <label htmlFor="companyProduct/service">من هو الجمهور المستهدف لهذا الفيديو؟</label>
                             <textarea className="text-left" name="" id="" cols="30" rows="2" required></textarea>
                         </div>
 
                         <div className="col-lg-10 mx-auto">
-                            <label htmlFor="people-part-of-company">WHAT KIND OF VIDEO IS THIS?</label>
+                            <label htmlFor="people-part-of-company">أي نوع من الفيديو هذا؟</label>
                             <div className="d-flex flex-row flex-wrap">
                                 <div className="col-auto my-1">
                                     <div className="custom-control custom-checkbox mr-sm-2 flex-row mx-2 checkboxes my-0">
                                         <input type="checkbox" className="custom-control-input" id="ENTHUSIASTIC-vid" name="ENTHUSIASTIC-vid" required/>
-                                        <label className="custom-control-label text-primary mx-2" htmlFor="ENTHUSIASTIC-vid">ENTHUSIASTIC</label>
+                                        <label className="custom-control-label text-primary mx-2" htmlFor="ENTHUSIASTIC-vid">حماسي</label>
                                     </div>
                                 </div>
                                 <div className="col-auto my-1">
                                     <div className="custom-control custom-checkbox mr-sm-2 flex-row mx-2 checkboxes my-0">
                                         <input type="checkbox" className="custom-control-input" id="EDUCATIONAL/AWARENESS" name="EDUCATIONAL/AWARENESS"/>
-                                        <label className="custom-control-label text-primary mx-2" htmlFor="EDUCATIONAL/AWARENESS">EDUCATIONAL/AWARENESS</label>
+                                        <label className="custom-control-label text-primary mx-2" htmlFor="EDUCATIONAL/AWARENESS">تربوي / توعوي</label>
                                     </div>
                                 </div>
                                 <div className="col-auto my-1">
                                     <div className="custom-control custom-checkbox mr-sm-2 flex-row mx-2 checkboxes my-0">
                                         <input type="checkbox" className="custom-control-input" id="INSPIRATIONAL" name="INSPIRATIONAL"/>
-                                        <label className="custom-control-label text-primary mx-2" htmlFor="INSPIRATIONAL">INSPIRATIONAL</label>
+                                        <label className="custom-control-label text-primary mx-2" htmlFor="INSPIRATIONAL">ملهم</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-lg-8 mx-auto">
-                            <label htmlFor="Location">WHAT’S THE CORE MESSAGE?</label>
-                            <input type="text" id="" name="" placeholder="" className="text-left w-100 mt-2 line-solid"/>
+                            <label htmlFor="Location">ما هي الرسالة الأساسية؟</label>
+                            <input type="text" name="" id="" className="line-solid"/>
                         </div>
 
                         <div className="col-lg-10 mx-auto">
-                            <label htmlFor="people-part-of-company">WHAT’S YOUR TONE OF VOICE?</label>
+                            <label htmlFor="people-part-of-company">ما نمط الصوت الذي تفضله؟</label>
                             <div className="d-flex flex-row flex-wrap">
                                 <div className="col-auto my-1">
                                     <div className="custom-control custom-checkbox mr-sm-2 flex-row mx-2 checkboxes my-0">
                                         <input type="checkbox" className="custom-control-input" id="FUNNY" name="FUNNY" required/>
-                                        <label className="custom-control-label text-primary mx-2" htmlFor="FUNNY">FUNNY</label>
+                                        <label className="custom-control-label text-primary mx-2" htmlFor="FUNNY">مضحك</label>
                                     </div>
                                 </div>
                                 <div className="col-auto my-1">
                                     <div className="custom-control custom-checkbox mr-sm-2 flex-row mx-2 checkboxes my-0">
                                         <input type="checkbox" className="custom-control-input" id="SERIOUS" name="SERIOUS"/>
-                                        <label className="custom-control-label text-primary mx-2" htmlFor="SERIOUS">SERIOUS</label>
+                                        <label className="custom-control-label text-primary mx-2" htmlFor="SERIOUS">جدّي</label>
                                     </div>
                                 </div>
                                 <div className="col-auto my-1">
                                     <div className="custom-control custom-checkbox mr-sm-2 flex-row mx-2 checkboxes my-0">
                                         <input type="checkbox" className="custom-control-input" id="FORMAL" name="FORMAL"/>
-                                        <label className="custom-control-label text-primary mx-2" htmlFor="FORMAL">FORMAL</label>
+                                        <label className="custom-control-label text-primary mx-2" htmlFor="FORMAL">رسمي</label>
                                     </div>
                                 </div>
                                 <div className="col-auto my-1">
                                     <div className="custom-control custom-checkbox mr-sm-2 flex-row mx-2 checkboxes my-0">
                                         <input type="checkbox" className="custom-control-input" id="CASUAL" name="CASUAL"/>
-                                        <label className="custom-control-label text-primary mx-2" htmlFor="CASUAL">CASUAL</label>
+                                        <label className="custom-control-label text-primary mx-2" htmlFor="CASUAL">غير رسمي</label>
                                     </div>
                                 </div>
                                 <div className="col-auto my-1">
                                     <div className="custom-control custom-checkbox mr-sm-2 flex-row mx-2 checkboxes my-0">
                                         <input type="checkbox" className="custom-control-input" id="ENTHUSIASTIC" name="ENTHUSIASTIC"/>
-                                        <label className="custom-control-label text-primary mx-2" htmlFor="ENTHUSIASTIC">ENTHUSIASTIC</label>
+                                        <label className="custom-control-label text-primary mx-2" htmlFor="ENTHUSIASTIC">متحمس</label>
                                     </div>
                                 </div>
                                 <div className="col-auto my-1">
                                     <div className="custom-control custom-checkbox mr-sm-2 flex-row mx-2 checkboxes my-0">
                                         <input type="checkbox" className="custom-control-input" id="MATTER-OF-FACT" name="MATTER-OF-FACT"/>
-                                        <label className="custom-control-label text-primary mx-2" htmlFor="MATTER-OF-FACT">MATTER-OF-FACT</label>
+                                        <label className="custom-control-label text-primary mx-2" htmlFor="MATTER-OF-FACT">سرد خبر</label>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
                         <div className="col-lg-10 mx-auto">
-                            <label htmlFor="people-part-of-company">DO YOU PREFER A MALE OR FEMALE VOICE OVER?</label>
-                            <div className="d-flex flex-row flex-wrap">
+                            <label htmlFor="people-part-of-company">هل تفضل صوت ذكر أم أنثى؟</label>
+                            <div className="d-flex flex-row flex-wrap checkboxes">
                                 <div className="col-auto my-1">
                                     <div className="custom-control custom-checkbox mr-sm-2 flex-row mx-2 checkboxes my-0">
                                         <input type="checkbox" className="custom-control-input" id="MALE" name="MALE" required/>
-                                        <label className="custom-control-label text-primary mx-2" htmlFor="MALE">MALE</label>
+                                        <label className="custom-control-label text-primary mx-2" htmlFor="MALE">ذكر</label>
                                     </div>
                                 </div>
                                 <div className="col-auto my-1">
                                     <div className="custom-control custom-checkbox mr-sm-2 flex-row mx-2 checkboxes my-0">
                                         <input type="checkbox" className="custom-control-input" id="FEMALE" name="FEMALE"/>
-                                        <label className="custom-control-label text-primary mx-2" htmlFor="FEMALE">FEMALE</label>
+                                        <label className="custom-control-label text-primary mx-2" htmlFor="FEMALE">أنثى</label>
                                     </div>
                                 </div>
                             </div>
@@ -193,25 +193,25 @@ const MotionQuestionnaireEn = () => {
                         </div>
 
                         <div className="col-lg-8 mx-auto">
-                            <label htmlFor="purposeOfCompany">DO YOU HAVE A SCRIPT? IF YES, PLEASE PROVIDE IT</label>
-                            <input type="text" className="line-solid"/>                        
+                            <label htmlFor="purposeOfCompany">هل لديك سيناريو؟ إذا كانت الإجابة بنعم، يرجى تقديمها</label>
+                            <input type="text" name="" id="" className="line-solid"/>
                         </div>
 
                         <div className="col-lg-8 mx-auto">
-                            <label htmlFor="purposeOfCompany">WHAT IS THE CALL TO ACTION AT THE END OF THE VIDEO?</label>
-                            <input type="text" className="line-solid"/>                        
+                            <label htmlFor="purposeOfCompany">ما هي عبارة اتخاذ إجراء في نهاية الفيديو؟</label>
+                            <input type="text" name="" id="" className="line-solid"/>
                         </div>
 
                         <div className="col-lg-8 mx-auto">
-                            <label htmlFor="isYourProductDifferent">ARE THERE ANY REFERENCE VIDEOS OR STYLES THAT YOU WOULD LIKE TO EMULATE IN THIS PRODUCTION? PLEASE PROVIDE LINKS</label>
+                            <label htmlFor="isYourProductDifferent">هل هناك أي مقاطع فيديو مرجعية أو أنماط تريدها أن نستوحي منها في هذا الإنتاج؟ يرجى تقديم الروابط</label>
                             <textarea className="text-left w-100" type="text" required/>
                         </div>
 
                         <div className="col-12 mx-auto text-center mb-5 mt-3">
-                            <h5 className="font-weight-bold" style={{color: "#f8931f"}}>THANK YOU FOR FILLING OUT THIS QUESTIONNAIRE. WE WILL BUILD <br /> THE BEST MOTION GRAPHICS VIDEO YOU ARE AIMING FOR!</h5>
+                            <h5 className="font-weight-bold text-center" style={{color: "#f8931f"}}>شكرا لملء هذا الاستبيان. سوف نقوم بتصميم أفضل فيديو أنيميشن لتحقيق الهدف منه!</h5>
                         </div>
                         <div className='sub-btn pb-5 w-auto'>
-                            <input className="btn btn-primary text-center w-auto" type="submit" value="Submit"></input>
+                            <input className="btn btn-primary text-center w-auto" type="submit" value="إرسال"></input>
                         </div>
                     </div>
                 </div>
@@ -224,7 +224,7 @@ const MotionQuestionnaireEn = () => {
                             <img className="w-75" src={osgLogo} alt="" />
                         </div>
                         <div>
-                            <p>We're on a mission to build a better <br />
+                            <p className="">We're on a mission to build a better <br />
                             future where technology creates <br />
                             good jobs for everyone</p>
                             <i className="fas fa-phone-alt"></i> +90 212 855 90 74
@@ -247,4 +247,4 @@ const MotionQuestionnaireEn = () => {
     )
 }
 
-export default MotionQuestionnaireEn
+export default MotionQuestionnaireAr
