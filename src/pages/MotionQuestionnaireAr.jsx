@@ -127,7 +127,7 @@ const MotionQuestionnaireAr = () => {
 
                         <div className="col-lg-8 mx-auto">
                             <label htmlFor="Location">ما هي الرسالة الأساسية؟</label>
-                            <input type="text" name="" id=""/>
+                            <input type="text" name="" id="" className="line-solid"/>
                         </div>
 
                         <div className="col-lg-10 mx-auto">
@@ -194,12 +194,12 @@ const MotionQuestionnaireAr = () => {
 
                         <div className="col-lg-8 mx-auto">
                             <label htmlFor="purposeOfCompany">هل لديك سيناريو؟ إذا كانت الإجابة بنعم، يرجى تقديمها</label>
-                            <input type="text" />                        
+                            <input type="text" name="" id="" className="line-solid"/>
                         </div>
 
                         <div className="col-lg-8 mx-auto">
                             <label htmlFor="purposeOfCompany">ما هي عبارة اتخاذ إجراء في نهاية الفيديو؟</label>
-                            <input type="text" />                        
+                            <input type="text" name="" id="" className="line-solid"/>
                         </div>
 
                         <div className="col-lg-8 mx-auto">

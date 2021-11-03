@@ -127,7 +127,7 @@ const MotionQuestionnaireEn = () => {
 
                         <div className="col-lg-8 mx-auto">
                             <label htmlFor="Location">WHAT’S THE CORE MESSAGE?</label>
-                            <input type="text" name="" id=""/>
+                            <input type="text" id="" name="" placeholder="" className="text-left w-100 mt-2 line-solid"/>
                         </div>
 
                         <div className="col-lg-10 mx-auto">
@@ -173,7 +173,7 @@ const MotionQuestionnaireEn = () => {
                         </div>
 
                         <div className="col-lg-10 mx-auto">
-                            <label htmlFor="people-part-of-company">DO YOU PREFER A MALE OR FEMALE VOİCE OVER?</label>
+                            <label htmlFor="people-part-of-company">DO YOU PREFER A MALE OR FEMALE VOICE OVER?</label>
                             <div className="d-flex flex-row flex-wrap">
                                 <div className="col-auto my-1">
                                     <div className="custom-control custom-checkbox mr-sm-2 flex-row mx-2 checkboxes my-0">
@@ -194,12 +194,12 @@ const MotionQuestionnaireEn = () => {
 
                         <div className="col-lg-8 mx-auto">
                             <label htmlFor="purposeOfCompany">DO YOU HAVE A SCRIPT? IF YES, PLEASE PROVIDE IT</label>
-                            <input type="text" />                        
+                            <input type="text" className="line-solid"/>                        
                         </div>
 
                         <div className="col-lg-8 mx-auto">
                             <label htmlFor="purposeOfCompany">WHAT IS THE CALL TO ACTION AT THE END OF THE VIDEO?</label>
-                            <input type="text" />                        
+                            <input type="text" className="line-solid"/>                        
                         </div>
 
                         <div className="col-lg-8 mx-auto">

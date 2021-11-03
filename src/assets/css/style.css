@@ -506,6 +506,14 @@ div .navbar-brand img {
         background-size: 100% 4ch;
     }
 
+    .line-solid {
+        width: 100% !important;
+        font-size: 17px !important;
+        background-image: linear-gradient(transparent, transparent calc(4ch - 2px), rgb(143, 143, 143) 0px);
+        background-size: 100% 4ch;
+        border-bottom: 2px solid #8f8f8f !important;
+    }
+
     .questions .container div {
         display: flex !important;
         flex-direction: column;
